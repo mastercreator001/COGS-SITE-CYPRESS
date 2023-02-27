@@ -9,23 +9,23 @@ describe('Staff section home page tests', () => {
         cy.get('.w-100').eq(11).click()
     })
 
-    it('changes page when we click on Senoir Staff', () => {
+    it('changes page when we click on Deputy Head Teachers', () => {
         cy.get('.w-100').eq(12).click()
+    })
+
+    it('changes page when we click on Senoir Staff', () => {
+        cy.get('.w-100').eq(13).click()
     })
     
     it('changes page when we click on Teaching Staff', () => {
-        cy.get('.w-100').eq(13).click()
-    })
-
-    it('changes page when we click on caretakers', () => {
         cy.get('.w-100').eq(14).click()
     })
 
-    it('changes page when we click on dinner ladies', () => {
+    it('changes page when we click on caretakers', () => {
         cy.get('.w-100').eq(15).click()
     })
 
-    it('changes page when we click on kitchen staff', () => {
+    it('changes page when we click on dinner ladies', () => {
         cy.get('.w-100').eq(16).click()
     })
 
@@ -33,11 +33,15 @@ describe('Staff section home page tests', () => {
         cy.get('.w-100').eq(17).click()
     })
 
-    it('changes page when we click on library staff', () => {
+    it('changes page when we click on kitchen staff', () => {
         cy.get('.w-100').eq(18).click()
     })
 
-    it('changes page when we click on Deputy Head Teachers', () => {
+    it('changes page when we click on library staff', () => {
         cy.get('.w-100').eq(19).click()
+    })
+
+    it('changes page when we click on French teacher Miss Forer', () => {
+        cy.get('.w-100').eq(20).click()
     })
 })
