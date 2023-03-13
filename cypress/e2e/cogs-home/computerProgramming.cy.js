@@ -2,7 +2,7 @@
 
 describe('Computer Programming section home page tests', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:9002')
+      cy.visit('http://localhost:3000')
     })
 
     it('changes page when we click on does anyone remember these computers with the floppy disc drive', () => {

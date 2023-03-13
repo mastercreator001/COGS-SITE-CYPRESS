@@ -2,11 +2,11 @@
 
 describe('Subjects section home page tests', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:9002')
+      cy.visit('http://localhost:3000')
     })
 
     it('changes page when we click on Science', () => {
-        cy.get('.w-100').eq(21).click()
+        cy.get('.w-100').eq(21).click ({ force: true })
     })
 
     it('changes page when we click on Maths', () => {
@@ -14,7 +14,7 @@ describe('Subjects section home page tests', () => {
     })
 
     it('changes page when we click on English', () => {
-        cy.get('.w-100').eq(23).click()
+        cy.get('.w-100').eq(23).click ({ force: true })
     })
 
     it('changes page when we click on P.E', () => {

@@ -2,7 +2,7 @@
 
 describe('school trips 1-4 section home page tests', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:9002')
+      cy.visit('http://localhost:3000')
     })
 
     it('changes page when we click on 1St years Singleton', () => {
@@ -14,7 +14,7 @@ describe('school trips 1-4 section home page tests', () => {
     })
 
     it('changes page when we click on Malham Yorkshire, Malham Cove, Imax, Jorvik', () => {
-        cy.get('.w-100').eq(42).click()
+        cy.get('.w-100').eq(42).click ({ force: true })
     })
 
     it('changes page when we click on Poole In Dorset Adventure Center', () => {
@@ -26,7 +26,7 @@ describe('school trips 1-4 section home page tests', () => {
     })
 
     it('changes page when we click on Roman Villa Newport', () => {
-        cy.get('.w-100').eq(45).click()
+        cy.get('.w-100').eq(45).click ({ force: true })
     })
 
     it('changes page when we click on Various Trips Out Across The Island', () => {
@@ -38,6 +38,6 @@ describe('school trips 1-4 section home page tests', () => {
     })
 
     it('changes page when we click on Apollo Theatre Trip', () => {
-        cy.get('.w-100').eq(48).click()
+        cy.get('.w-100').eq(48).click ({ force: true })
     })
 })

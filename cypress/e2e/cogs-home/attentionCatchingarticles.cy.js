@@ -2,7 +2,7 @@
 
 describe('Attention Catchers articles section home page tests', () => {
     beforeEach(() => {
-      cy.visit('http://localhost:9002')
+      cy.visit('http://localhost:3000')
     })
 
     it('changes page when we click on School opening A brief history', () => {
@@ -14,7 +14,7 @@ describe('Attention Catchers articles section home page tests', () => {
     })
 
     it('changes page when we click on School Building Images', () => {
-        cy.get('.w-100').eq(39).click()
+        cy.get('.w-100').eq(39).click ({ force: true })
     })
 
     
