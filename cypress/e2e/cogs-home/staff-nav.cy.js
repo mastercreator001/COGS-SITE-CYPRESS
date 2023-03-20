@@ -72,28 +72,55 @@ describe('Sections home page navigation tests', () => {
     it('navigate via menu to Gallery - Old Photos 1971 onwards', () => {
         cy.get('.dropdown-hover').eq(1)
         .invoke('show').click().wait(1000)
-        cy.get('a').contains(' Old Photos 1971 onwards ')
+        cy.get('a').contains('Old Photos 1971 onwards')
         cy.get('span').contains('See all navigations')
         cy.get('#ddh-gallery').invoke('show').click().wait(1000)
-        cy.get('a').contains(' Old Photos 1971 onwards ')
+        cy.get('a').contains('Old Photos 1971 onwards')
     })
 
     it('navigate via menu to Gallery - 1980 onward', () => {
         cy.get('.dropdown-hover').eq(1)
         .invoke('show').click().wait(1000)
-        cy.get('a').contains(' 1980 onward ')
+        cy.get('a').contains('1980 onward')
         cy.get('span').contains('See all navigations')
         cy.get('#ddh-gallery').invoke('show').click().wait(1000)
-        cy.get('a').contains(' 1980 onward ')
+        cy.get('a').contains('1980 onward')
     })
 
     it('navigate via menu to Gallery - Trips', () => {
         cy.get('.dropdown-hover').eq(1)
         .invoke('show').click().wait(1000)
-        cy.get('a').contains(' Trips ')
+        cy.get('a').contains('Trips')
         cy.get('span').contains('See all navigations')
         cy.get('#ddh-gallery').invoke('show').click().wait(1000)
-        cy.get('a').contains(' Trips ')
+        cy.get('a').contains('Trips')
     })
 
+    it('navigate via menu to Demolition - Photos Gallery', () => {
+        cy.get('.dropdown-hover').eq(1)
+        .invoke('show').click().wait(1000)
+        cy.get('a').contains('Photos Gallery')
+        cy.get('span').contains('See all navigations')
+        cy.get('#ddh-demolition').invoke('show').click().wait(1000)
+        cy.get('a').contains('Photos Gallery')
+    })
+
+    it('navigate via menu to Demolition - Current site status', () => {
+        cy.get('.dropdown-hover').eq(1)
+        .invoke('show').click().wait(1000)
+        cy.get('a').contains('Current site status')
+        cy.get('span').contains('See all navigations')
+        cy.get('#ddh-demolition').invoke('show').click().wait(1000)
+        cy.get('a').contains('Current site status')
+    })
+
+    it('navigate via menu to Demolition - History', () => {
+        cy.get('.dropdown-hover').eq(1)
+        .invoke('show').click().wait(1000)
+        cy.get('a').contains('History')
+        cy.get('span').contains('See all navigations')
+        cy.get('#ddh-demolition').invoke('show').click().wait(1000)
+        cy.get('a').contains('History')
+    })
+    
 })
