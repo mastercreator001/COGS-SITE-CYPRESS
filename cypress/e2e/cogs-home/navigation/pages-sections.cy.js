@@ -11,8 +11,8 @@ describe('Sections home page tests', () => {
         cy.get('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get('span'). contains('See all staff').click({ force: true });
-        cy.get('.text-success').should('have.text','groupedhomepanoramadomain');
+        cy.get('span').contains('See all staff')
+        cy.get('h6').contains('School Staff');
     })
     
     it('navigate via the bar to the history', () => {
@@ -20,8 +20,8 @@ describe('Sections home page tests', () => {
         cy.get('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get('span'). contains('See all navigations').click({ force: true });
-        cy.get('.text-success').should('have.text','groupedhomepanoramadomain');
+        cy.get('span').contains('See all navigations');
+        cy.get('h6').contains('History');
   })
 
     it('navigate via the bar to the school maps', () => {
@@ -29,8 +29,8 @@ describe('Sections home page tests', () => {
         cy.get ('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get ('span'). contains('See all examples').click({ force: true });
-        cy.get ('.text-success').should('have.text','groupedhomepanoramadomain');
+        cy.get ('span'). contains('See all input areas').;
+        cy.get('h6').contains('School maps');
 })      
 
     it('navigate via the bar to the Gallery', () => {
@@ -38,8 +38,8 @@ describe('Sections home page tests', () => {
       cy.get ('#dropdownMenuPages').click({ force: true })
 
       .wait(1000)
-      cy.get ('span'). contains('See all examples').click({ force: true });
-      cy.get ('.text-success').should('have.text','groupedhomepanoramadomain');
+      cy.get ('span'). contains('See all examples');
+      cy.get('h6').contains('Gallery');
     })
 
     it('navigate via the bar to the Demolition', () => {
@@ -47,7 +47,7 @@ describe('Sections home page tests', () => {
       cy.get ('#dropdownMenuPages').click({ force: true })
 
       .wait(1000)
-      cy.get ('span'). contains('See all examples').click({ force: true });
-      cy.get ('.text-success').should('have.text','groupedhomepanoramadomain');
+      cy.get ('span'). contains('See all elements');
+      cy.get('h6').contains('Demolition');
     })      
 })

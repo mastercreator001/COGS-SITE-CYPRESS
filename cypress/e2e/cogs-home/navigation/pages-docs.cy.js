@@ -11,7 +11,7 @@ describe('Sections home page tests', () => {
         cy.get('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get('span'). contains('All about maps of the school').click({ force: true });
+        cy.get('span').contains('All about maps of the school').click({ force: true });
         cy.get('.text-success').should('have.text','groupedhomepanoramadomain');
     })
     
@@ -20,7 +20,7 @@ describe('Sections home page tests', () => {
         cy.get('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get('span'). contains('See our colors, icons and typography').click({ force: true });
+        cy.get('span').contains('See our colors, icons and typography').click({ force: true });
         cy.get('.text-success').should('have.text','groupedhomepanoramadomain');
   })
 
@@ -29,7 +29,7 @@ describe('Sections home page tests', () => {
         cy.get('#dropdownMenuPages').click({ force: true })
 
         .wait(1000)
-        cy.get('span'). contains('Explore our collection of fully designed components').click({ force: true });
+        cy.get('span').contains('Explore our collection of fully designed components').click({ force: true });
         cy.get('.text-success').should('have.text','groupedhomepanoramadomain');
 })      
 })
